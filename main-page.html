@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет-магазин "Sweets For Cuties"</title>
+    <link rel="stylesheet" href="styles/common-style.css" />
+    <link rel="stylesheet" href="styles/main-page.css" />
+  </head>
+  <body>
+    <header>
+      <img src="icons/logo.png" alt="logo" />
+      <div class="site-title-div">
+        <h1>SWEETS FOR CUTIES</h1>
+      </div>
+      <div class="cart-div">
+        <div class="cart-icon-wrapper">
+          <a href="cart.html"
+            ><img src="icons/shopping-cart.png" alt="Корзина" class="cart-icon"
+          /></a>
+          <span class="cart-badge js-total-items">0</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Ищите вещи себе по душе</h2>
+      <section class="search-section">
+        <div class="empty-div"></div>
+        <input
+          type="text"
+          class="search-input js-search-input"
+          placeholder="Введите название товара..."
+        />
+        <button class="search-button js-search-button">
+          <img src="icons/search.png" alt="search" class="search-img" />
+        </button>
+      </section>
+
+      <section class="products-list js-product-list"></section>
+    </main>
+
+    <script type="module" src="scripts/main-page.js"></script>
+  </body>
+</html>
